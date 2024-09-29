@@ -12,8 +12,8 @@ import java.util.Map;
  * This class provides the service of converting language codes to their names.
  */
 public class LanguageCodeConverter {
-    private Map<String, String> languageCodes;
-    private Map<String, String> languageNames;
+    private Map<String, String> languageCodeMap = new HashMap<>();
+    private Map<String, String> languageNameMap = new HashMap<>();
 
     /**
      * Default constructor which will load the language codes from "language-codes.txt"
